@@ -1,6 +1,6 @@
 import csv
 
-with open("dict.csv","r")as file:
+with open("module_05/dict.csv","r") as file:
     reader=csv.reader(file)
 
     first_line=next(reader)
@@ -17,7 +17,7 @@ pirate_dict = {
 
 print(pirate_dict)
 
-with open("in.txt","r") as file:
+with open("module_05/in.txt","r") as file:
            text = file.read()
 print(text)
 
@@ -27,7 +27,7 @@ translated_text = " ".join(
 )
 
 # Write output file
-with open("out.txt", "w") as file:
+with open("module_05/out.txt", "w") as file:
     file.write(translated_text)
 
 print("Translation complete!")
